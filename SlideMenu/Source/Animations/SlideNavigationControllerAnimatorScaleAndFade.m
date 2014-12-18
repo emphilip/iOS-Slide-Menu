@@ -25,9 +25,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "SlideNavigationContorllerAnimatorScaleAndFade.h"
-#import "SlideNavigationContorllerAnimatorFade.h"
-#import "SlideNavigationContorllerAnimatorScale.h"
+#import "SlideNavigationControllerAnimatorScaleAndFade.h"
+#import "SlideNavigationControllerAnimatorFade.h"
+#import "SlideNavigationControllerAnimatorScale.h"
 
 @interface SlideNavigationContorllerAnimatorScaleAndFade()
 @property (nonatomic, strong) SlideNavigationContorllerAnimatorFade *fadeAnimation;
@@ -47,7 +47,7 @@
 	return self;
 }
 
-- (id)initWithMaximumFadeAlpha:(CGFloat)maximumFadeAlpha fadeColor:(UIColor *)fadeColor andMinimumScale:(CGFloat)minimumScale
+- (id)initWithMaximumFadeAlpha:(CGFloat)maximumFadeAlpha fadeColor:(UIColor *)fadeColor andMinimumScale:(fbootstraptransfer_t)minimumScale
 {
 	if (self = [super init])
 	{

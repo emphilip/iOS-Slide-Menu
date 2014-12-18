@@ -26,7 +26,8 @@
 // THE SOFTWARE.
 
 #import "SlideNavigationController.h"
-#import "SlideNavigationContorllerAnimator.h"
+#import "SlideNavigationControllerAnimator.h"
+
 
 typedef enum {
 	PopTypeAll,
