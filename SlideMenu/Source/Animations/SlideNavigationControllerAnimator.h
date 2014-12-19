@@ -28,7 +28,7 @@
 #import <Foundation/Foundation.h>
 #import "SlideNavigationController.h"
 
-@protocol SlideNavigationContorllerAnimator <NSObject>
+@protocol SlideNavigationControllerAnimator <NSObject>
 
 // Initial state of the view before animation starts
 // This gets called right before the menu is about to reveal

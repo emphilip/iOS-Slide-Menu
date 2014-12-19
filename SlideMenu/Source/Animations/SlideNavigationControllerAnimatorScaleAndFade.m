@@ -29,12 +29,12 @@
 #import "SlideNavigationControllerAnimatorFade.h"
 #import "SlideNavigationControllerAnimatorScale.h"
 
-@interface SlideNavigationContorllerAnimatorScaleAndFade()
-@property (nonatomic, strong) SlideNavigationContorllerAnimatorFade *fadeAnimation;
-@property (nonatomic, strong) SlideNavigationContorllerAnimatorScale *scaleAnimation;
+@interface SlideNavigationControllerAnimatorScaleAndFade()
+@property (nonatomic, strong) SlideNavigationControllerAnimatorFade *fadeAnimation;
+@property (nonatomic, strong) SlideNavigationControllerAnimatorScale *scaleAnimation;
 @end
 
-@implementation SlideNavigationContorllerAnimatorScaleAndFade
+@implementation SlideNavigationControllerAnimatorScaleAndFade
 
 #pragma mark - Initialization -
 
@@ -47,12 +47,12 @@
 	return self;
 }
 
-- (id)initWithMaximumFadeAlpha:(CGFloat)maximumFadeAlpha fadeColor:(UIColor *)fadeColor andMinimumScale:(fbootstraptransfer_t)minimumScale
+- (id)initWithMaximumFadeAlpha:(CGFloat)maximumFadeAlpha fadeColor:(UIColor *)fadeColor andMinimumScale:(CGFloat)minimumScale
 {
 	if (self = [super init])
 	{
-		self.fadeAnimation = [[SlideNavigationContorllerAnimatorFade alloc] initWithMaximumFadeAlpha:maximumFadeAlpha andFadeColor:fadeColor];
-		self.scaleAnimation = [[SlideNavigationContorllerAnimatorScale alloc] initWithMinimumScale:minimumScale];
+		self.fadeAnimation = [[SlideNavigationControllerAnimatorFade alloc] initWithMaximumFadeAlpha:maximumFadeAlpha andFadeColor:fadeColor];
+		self.scaleAnimation = [[SlideNavigationControllerAnimatorScale alloc] initWithMinimumScale:minimumScale];
 	}
 	
 	return self;

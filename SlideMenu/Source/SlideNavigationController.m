@@ -845,10 +845,11 @@ static SlideNavigationController *singletonInstance;
 	}
 }
 
-- (void)setMenuRevealAnimator:(id<SlideNavigationContorllerAnimator>)menuRevealAnimator
+- (void)setMenuRevealAnimator:(id<SlideNavigationControllerAnimator>)menuRevealAnimator
 {
 	[self.menuRevealAnimator clear];
 	
+    
 	_menuRevealAnimator = menuRevealAnimator;
 }
 

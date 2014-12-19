@@ -26,9 +26,9 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "SlideNavigationContorllerAnimator.h"
+#import "SlideNavigationControllerAnimator.h"
 
-@interface SlideNavigationContorllerAnimatorSlide : NSObject <SlideNavigationContorllerAnimator>
+@interface SlideNavigationControllerAnimatorSlide : NSObject <SlideNavigationControllerAnimator>
 
 @property (nonatomic, assign) CGFloat slideMovement;
 

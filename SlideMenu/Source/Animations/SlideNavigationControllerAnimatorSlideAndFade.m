@@ -25,16 +25,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "SlideNavigationContorllerAnimatorSlideAndFade.h"
-#import "SlideNavigationContorllerAnimatorSlide.h"
-#import "SlideNavigationContorllerAnimatorFade.h"
+#import "SlideNavigationControllerAnimatorSlideAndFade.h"
+#import "SlideNavigationControllerAnimatorSlide.h"
+#import "SlideNavigationControllerAnimatorFade.h"
 
-@interface SlideNavigationContorllerAnimatorSlideAndFade()
-@property (nonatomic, strong) SlideNavigationContorllerAnimatorFade *fadeAnimation;
-@property (nonatomic, strong) SlideNavigationContorllerAnimatorSlide *slideAnimation;
+@interface SlideNavigationControllerAnimatorSlideAndFade()
+@property (nonatomic, strong) SlideNavigationControllerAnimatorFade *fadeAnimation;
+@property (nonatomic, strong) SlideNavigationControllerAnimatorSlide *slideAnimation;
 @end
 
-@implementation SlideNavigationContorllerAnimatorSlideAndFade
+@implementation SlideNavigationControllerAnimatorSlideAndFade
 
 #pragma mark - Initialization -
 
@@ -51,8 +51,8 @@
 {
 	if (self = [super init])
 	{
-		self.fadeAnimation = [[SlideNavigationContorllerAnimatorFade alloc] initWithMaximumFadeAlpha:maximumFadeAlpha andFadeColor:fadeColor];
-		self.slideAnimation = [[SlideNavigationContorllerAnimatorSlide alloc] initWithSlideMovement:slideMovement];
+		self.fadeAnimation = [[SlideNavigationControllerAnimatorFade alloc] initWithMaximumFadeAlpha:maximumFadeAlpha andFadeColor:fadeColor];
+		self.slideAnimation = [[SlideNavigationControllerAnimatorSlide alloc] initWithSlideMovement:slideMovement];
 	}
 	
 	return self;

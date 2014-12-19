@@ -26,9 +26,9 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "SlideNavigationContorllerAnimator.h"
+#import "SlideNavigationControllerAnimator.h"
 
-@interface SlideNavigationContorllerAnimatorFade : NSObject <SlideNavigationContorllerAnimator>
+@interface SlideNavigationControllerAnimatorFade : NSObject <SlideNavigationControllerAnimator>
 
 @property (nonatomic, assign) CGFloat maximumFadeAlpha;
 @property (nonatomic, strong) UIColor *fadeColor;

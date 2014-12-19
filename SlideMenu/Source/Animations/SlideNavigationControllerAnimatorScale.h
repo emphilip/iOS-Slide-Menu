@@ -26,9 +26,9 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "SlideNavigationContorllerAnimator.h"
+#import "SlideNavigationControllerAnimator.h"
 
-@interface SlideNavigationContorllerAnimatorScale : NSObject <SlideNavigationContorllerAnimator>
+@interface SlideNavigationControllerAnimatorScale : NSObject <SlideNavigationControllerAnimator>
 
 @property (nonatomic, assign) CGFloat minimumScale;
 

@@ -25,13 +25,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "SlideNavigationContorllerAnimatorFade.h"
+#import "SlideNavigationControllerAnimatorFade.h"
 
-@interface SlideNavigationContorllerAnimatorFade()
+@interface SlideNavigationControllerAnimatorFade()
 @property (nonatomic, strong) UIView *fadeAnimationView;
 @end
 
-@implementation SlideNavigationContorllerAnimatorFade
+@implementation SlideNavigationControllerAnimatorFade
 
 #pragma mark - Initialization -
 
