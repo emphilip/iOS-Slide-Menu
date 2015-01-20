@@ -58,7 +58,6 @@
         ? [SlideNavigationController sharedInstance].leftMenu
         : [SlideNavigationController sharedInstance].rightMenu;
 	
-	UIInterfaceOrientation orientation= [SlideNavigationController sharedInstance].interfaceOrientation;
 	CGRect rect = menuViewController.view.frame;
 	
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0"))
@@ -67,28 +66,7 @@
     }
     else
     {
-        if (UIInterfaceOrientationIsLandscape(orientation))
-        {
-            if (orientation == UIInterfaceOrientationLandscapeRight)
-            {
-                rect.origin.y = (menu == MenuLeft) ? self.slideMovement*-1 : self.slideMovement;
-            }
-            else
-            {
-                rect.origin.y = (menu == MenuRight) ? self.slideMovement*-1 : self.slideMovement;
-            }
-        }
-        else
-        {
-            if (orientation == UIInterfaceOrientationPortrait)
-            {
-                rect.origin.x = (menu == MenuLeft) ? self.slideMovement*-1 : self.slideMovement;
-            }
-            else
-            {
-                rect.origin.x = (menu == MenuRight) ? self.slideMovement*-1 : self.slideMovement;
-            }
-        }
+        rect.origin.x = (menu == MenuLeft) ? self.slideMovement*-1 : self.slideMovement;
     }
     
     menuViewController.view.frame = rect;
@@ -99,8 +77,6 @@
     UIViewController *menuViewController = (menu == MenuLeft)
         ? [SlideNavigationController sharedInstance].leftMenu
         : [SlideNavigationController sharedInstance].rightMenu;
-    
-    UIInterfaceOrientation orientation = [SlideNavigationController sharedInstance].interfaceOrientation;
     
     NSInteger location = (menu == MenuLeft)
         ? (self.slideMovement * -1) + (self.slideMovement * progress)
@@ -113,23 +89,7 @@
         location = (location < 0) ? 0 : location;
     
     CGRect rect = menuViewController.view.frame;
-    
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0"))
-    {
-        rect.origin.x = location;
-    }
-    else
-    {
-        if (UIInterfaceOrientationIsLandscape(orientation))
-        {
-            rect.origin.y = (orientation == UIInterfaceOrientationLandscapeRight) ? location : location*-1;
-        }
-        else
-        {
-            rect.origin.x = (orientation == UIInterfaceOrientationPortrait) ? location : location*-1;
-        }
-    }
-    
+    rect.origin.x = location;
     menuViewController.view.frame = rect;
 }
 
@@ -147,25 +107,9 @@
     ? [SlideNavigationController sharedInstance].leftMenu
     : [SlideNavigationController sharedInstance].rightMenu;
     
-    UIInterfaceOrientation orientation= [SlideNavigationController sharedInstance].interfaceOrientation;
-    
     CGRect rect = menuViewController.view.frame;
-    
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0"))
-    {
-        rect.origin.x = 0;
-    }
-    else
-    {
-        if (UIInterfaceOrientationIsLandscape(orientation))
-        {
-            rect.origin.y = 0;
-        }
-        else
-        {
-            rect.origin.x = 0;
-        }
-    }
+    rect.origin.x = 0;
+   
     
     menuViewController.view.frame = rect;
 }
